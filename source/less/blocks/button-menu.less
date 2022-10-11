@@ -1,0 +1,30 @@
+.button-menu {
+  width: 16px;
+  height: 2px;
+  align-self: center;
+  border: none;
+  background: black;
+  position: relative;
+  cursor: pointer;
+  margin-left: 22px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    left: 0;
+    bottom: 4px;
+    background: black;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    left: 0;
+    top: 4px;
+    background: black;
+  }
+}

@@ -1,0 +1,67 @@
+.features-list {
+  .reset-list();
+
+  @media (min-width: @tablet-widths) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  @media (min-width: @desktop-widths) {
+    flex-wrap: nowrap;
+  }
+}
+
+.features-list__item {
+  min-height: 142px;
+  padding-top: 56px;
+  background-image: url("../../img/features-1.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  &:nth-child(2) {
+    background-image: url("../../img/features-2.svg");
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../img/features-3.svg");
+  }
+
+  &:nth-child(4) {
+    background-image: url("../../img/features-4.svg");
+  }
+
+  @media (min-width: @tablet-widths) {
+    max-width: 339px;
+    padding-top: 0;
+    padding-left: 72px;
+    background-position: left 0;
+  }
+
+  @media (min-width: @desktop-widths) {
+    max-width: 318px;
+    padding-top: 56px;
+    padding-left: 0;
+    background-position: center 0;
+  }
+}
+
+.features-list__title {
+  .font(700, 18px, 32px);
+  text-align: center;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-widths) {
+    .font(700, 24px, 36px);
+    margin-top: 0;
+  }
+}
+
+.features-list__description {
+  .font(400, 14px, 20px);
+  text-align: center;
+
+  @media (min-width: @tablet-widths) {
+    .font(400, 16px, 24px);
+  }
+}

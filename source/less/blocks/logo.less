@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  margin-right: auto;
+  gap: 20px;
+  align-items: center;
+
+  &__text {
+    .font(400, 12px, 16px);
+    display: none;
+
+    @media (min-width: @desktop-widths) {
+      display: inline-flex;
+    }
+  }
+}

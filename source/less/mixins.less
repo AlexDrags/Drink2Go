@@ -1,0 +1,31 @@
+.containers() {
+  width: 280px;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablet-widths) {
+    width: 728px;
+    // padding: 0 20px;
+  }
+  @media (min-width: @desktop-widths) {
+    width: 1360px;
+  }
+}
+
+.font(@font-weight, @font-size, @line-height) {
+  font-weight: @font-weight;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #333333;
+}
+
+.reset-list() {
+  padding: 0;
+  list-style: none;
+}
+
+.reset-link() {
+  text-decoration: none;
+  text-transform: uppercase;
+}
