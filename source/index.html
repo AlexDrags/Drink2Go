@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 
   </head>
@@ -52,9 +56,62 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="index">
+      <section class="promo">
+        <div class="promo__container container">
+          <!-- Slider main container -->
+          <div class="promo__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1360px)" srcset="./img/slider-flat-white@desktop.png">
+                  <source media="(min-width: 728px)" srcset="./img/slider-flat_white@tablet.png">
+                  <img src="./img/slider-flat-white.png" alt="Декаф Флэт Уайт">
+                </picture>
+
+                <section class="swiper-slide__item promo-product">
+                  <span class="promo-product__new">Новинка!</span>
+                  <header class="promo-product__title">Декаф Флэт Уайт</header>
+                  <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1360px)" srcset="./img/slider-espresso@desktop.png">
+                  <source media="(min-width: 728px)" srcset="./img/slider-espresso@tablet.png">
+                  <img src="./img/slider-espresso.png" alt="Triple espresso">
+                </picture>
+                <section class="swiper-slide__item promo-product">
+                  <span class="promo-product__new">Новинка!</span>
+                  <header class="promo-product__title">Тройной Еспрессо</header>
+                  <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                </section>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1360px)" srcset="./img/slider-lavender@desktop.png">
+                  <source media="(min-width: 728px)" srcset="./img/slider-lavender@tablet.png">
+                  <img src="./img/slider-lavender.png" alt="Lavender latte">
+                </picture>
+                <section class="swiper-slide__item promo-product">
+                  <span class="promo-product__new">Новинка!</span>
+                  <header class="promo-product__title">Лавандовое Латте</header>
+                  <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                </section>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
       <section class="advantages">
-        <div class="container">
+        <div class="advantages__container container">
           <h2 class="advantages__title">Преимущества</h2>
         <p class="advantages__header-text">Главные причины выбрать Drink2Go</p>
         <ul class="advantages__list features-list">
@@ -146,9 +203,13 @@
         <p class="footer__copyright"><span class="footer__copyright__text">Разработано в</span> <a class="footer__copyright__link" href="http://">HTML Academy</a></p>
       </div>
     </footer>
+
+    <!-- LEAFLET -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer></script>
   </body>
 </html>

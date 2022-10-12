@@ -1,0 +1,19 @@
+.promo {
+  background: @bg-flat-white;
+
+  @media (min-width: @tablet-widths) {
+    background: linear-gradient(180deg, @bg-flat-white 77%, @white 23%);
+  }
+
+  @media (min-width: @desktop-widths) {
+    background: @bg-flat-white;
+  }
+}
+
+.promo__container {
+  width: 320px;
+
+  @media (min-width: @tablet-widths) {
+    .container();
+  }
+}
