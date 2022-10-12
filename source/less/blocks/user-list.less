@@ -14,6 +14,18 @@
     text-transform: uppercase;
     padding: 22px 22px;
 
+
+    &:hover,
+    &:focus-within {
+      color: @primary;
+
+    }
+
+    &:active,
+    &:focus-within:active {
+      background-color: #f0ebff;
+    }
+
     @media (min-width: @tablet-widths) {
       padding: 32px 20px;
     }

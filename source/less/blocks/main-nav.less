@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   min-height: 60px;
   align-items: center;
+
+  @media (min-width: @tablet-widths) {
+    min-height: 80px;
+  }
 }
 
 .main-nav__toggle {
@@ -32,4 +36,18 @@
   .reset-link();
   text-transform: uppercase;
   padding: 32px 20px;
+
+  &--current {
+    border-bottom: 2px solid @primary;
+  }
+
+  &:hover,
+  &:focus-within {
+    color: @primary;
+  }
+
+  &:active,
+  &:focus-within:active {
+    background-color: #f0ebff;
+  }
 }
