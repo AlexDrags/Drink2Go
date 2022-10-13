@@ -106,3 +106,35 @@
     grid-column-end: 4;
   }
 }
+
+.footer__address {
+  .font(400, 14px, 20px);
+  font-style: inherit;
+  margin-bottom: 16px;
+}
+
+.footer__phone {
+  display: inline-block;
+  .reset-link();
+  .font(400, 14px, 20px);
+}
+
+.footer__copyright__text {
+  .font(400, 12px, 16px);
+  color: #bdbdbd;
+}
+
+.footer__copyright__link {
+  .reset-link();
+  .font(400, 12px, 16px);
+  color: #bdbdbd;
+
+  &:hover,
+  &:focus-within {
+    color: #9070ec;
+  }
+
+  &:active {
+    color: #593cac;
+  }
+}

@@ -1,0 +1,30 @@
+.filter {
+  background: @bg-lightest-grey;
+
+  @media (min-width: @desktop-widths) {
+    padding-top: 100px;
+  }
+}
+
+.filter__title {
+  .font(700, 12px, 16px);
+  text-align: center;
+  color: @primary;
+
+  @media (min-width: @desktop-widths) {
+    margin-bottom: 2px;
+  }
+}
+
+.filter__header-text {
+  .font(700, 24px, 36px);
+  text-align: center;
+
+  @media (min-width: @tablet-widths) {
+    .font(700, 42px, 64 px);
+  }
+
+  @media (min-width: @desktop-widths) {
+    margin-top: 2px;
+  }
+}

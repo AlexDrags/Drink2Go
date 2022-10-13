@@ -1,5 +1,16 @@
 .advantages__container{
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  @media (min-width: @tablet-widths) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: @desktop-widths) {
+    padding-top: 100px;
+    padding-bottom: 96px;
+  }
 }
 
 .advantages__title {
@@ -14,6 +25,10 @@
 
   @media (min-width: @tablet-widths) {
     .font(700, 42px, 64 px);
+  }
+
+  @media (min-width: @tablet-widths) {
+    margin-bottom: 80px;
   }
 
 }
