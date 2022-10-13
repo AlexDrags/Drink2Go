@@ -1,0 +1,19 @@
+.products-list {
+  .reset-list();
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: @tablet-widths) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-widths) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.products-list__item {
+  max-width: 317px;
+  background-color: @white;
+}

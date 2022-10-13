@@ -1,0 +1,36 @@
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  .font(400, 14px, 24px);
+  color: @primary;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid @white;
+  background-color: @white;
+  margin: 0;
+}
+
+.pagination a.active {
+  background-color: transparent;
+  color: @black;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination__link-prev {
+  min-width: 150px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.pagination__link-next {
+  min-width: 150px;
+  text-align: center;
+  border-radius: 4px;
+}

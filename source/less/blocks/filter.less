@@ -1,9 +1,27 @@
 .filter {
   background: @bg-lightest-grey;
+  padding-top: 80px;
+
+  @media (min-width: @tablet-widths) {
+    padding-top: 80px;
+  }
 
   @media (min-width: @desktop-widths) {
     padding-top: 100px;
   }
+}
+
+.filter__grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @desktop-widths) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.filter__product-wrapper {
+  text-align: center;
 }
 
 .filter__title {
