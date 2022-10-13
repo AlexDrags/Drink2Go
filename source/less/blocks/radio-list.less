@@ -1,0 +1,72 @@
+.radio-list {
+  .reset-list();
+}
+
+.reset-list__name {
+  padding-left: 10px;
+  min-width: max-content;
+}
+
+/* Контейнер */
+.control {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Скрыть переключатель браузера по умолчанию */
+.control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Создание пользовательского переключателя */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+}
+
+/* При наведении курсора мыши добавьте серый цвет фона */
+.control:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Когда переключатель установлен, добавьте синий фон */
+.control input:checked ~ .checkmark {
+  background-color: @white;
+  border-color: @primary;
+}
+
+/* Создайте индикатор (точка/круг-скрыт, если не установлен флажок) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Показывать индикатор (точка / круг), когда он установлен */
+.control input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Стиль индикатора (точка / круг) */
+.control .checkmark:after {
+ 	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+  background: @primary;
+}

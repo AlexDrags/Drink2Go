@@ -134,6 +134,134 @@
         <div class="filter__container container">
           <h2 class="filter__title">Каталог</h2>
           <p class="filter__header-text">Каталог кофейных напитков</p>
+          <div class="filter__price-wrapper">
+            <form class="filter__price price-form" action="https://echo.htmlacademy.ru" method="post">
+
+              <fieldset class="price-form__group">
+                <legend class="price-form__title filter__hotels-rangetitle">Цена</legend>
+
+                <div class="filter__range-line">
+                  <div class="filter__range-bar">
+                    <button class="filter__range-toggle min-toggle" type="button">
+                      <span class="visually-hidden">Минимальное значение.</span>
+                    </button>
+                    <button class="filter__range-toggle max-toggle" type="button">
+                      <span class="visually-hidden">Максимальное значение.</span>
+                    </button>
+                  </div>
+                </div>
+
+                <p class="filter__range-views">
+                  <label class="visually-hidden" for="minprice">Минимальная цена</label>
+                  <input class="field-control" type="number" id="minprice" name="min" placeholder="0" value="0">
+                  <span>-</span>
+                  <input class="field-control" type="number" id="maxprice" name="max" placeholder="900" value="900">
+                  <label class="visually-hidden" for="maxprice">Максимальная цена</label>
+                </p>
+              </fieldset>
+
+              <fieldset class="price-form__group">
+                <legend class="price-form__title">Наличие молока</legend>
+
+                  <ul class="price-form__list radio-list">
+                    <li class="radio-list__item">
+                      <label class="control">
+                        <input type="radio" id="all" name="typeMilk" value="all" checked="checked">
+                        <span class="checkmark"></span>
+                        <span class="reset-list__name">Не важно</span>
+                      </label>
+                    </li>
+                    <li class="radio-list__item">
+                      <label class="control">
+                        <input type="radio" id="animal" name="typeMilk" value="animal">
+                        <span class="checkmark"></span>
+                        <span class="reset-list__name">Только животное</span>
+                      </label>
+                    </li>
+                    <li class="radio-list__item">
+                      <label class="control">
+                        <input type="radio" id="veg" name="typeMilk" value="veg">
+                        <span class="checkmark"></span>
+                        <span class="reset-list__name">Только растительное</span>
+                      </label>
+                    </li>
+                    <li class="radio-list__item">
+                      <label class="control">
+                        <input type="radio" id="noMilk" name="typeMilk" value="noMilk" disabled>
+                        <span class="checkmark"></span>
+                        <span class="reset-list__name">Без молока</span>
+                      </label>
+                    </li>
+                  </ul>
+              </fieldset>
+
+              <fieldset class="price-form__group">
+                <legend class="price-form__title">Страна произрастания</legend>
+                  <ul class="price-form__list tumbler-list">
+
+                    <li class="tumbler-list__item">
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        <span class="tumbler-list__name">Бразилия</span>
+                      </label>
+                    </li>
+
+                    <li class="tumbler-list__item">
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        <span class="tumbler-list__name">Эфиопия</span>
+                      </label>
+                    </li>
+
+                    <li class="tumbler-list__item">
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        <span class="tumbler-list__name">Колумбия</span>
+                      </label>
+                    </li>
+
+                    <li class="tumbler-list__item">
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        <span class="tumbler-list__name">Коста-Рика</span>
+                      </label>
+                    </li>
+
+                    <li class="tumbler-list__item">
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        <span class="tumbler-list__name">Перу</span>
+                      </label>
+                    </li>
+
+                    <div class="wrapper">
+                      <button class="filter__button-accept button" type="submit">Применить фильтр</button>
+                      <button class="filter__button-reset button" type="reset">Сбросить фильтр</button>
+                    </div>
+            </form>
+          </div>
+          <div class="filter__sort-wrapper select">
+            <label class="select__label">
+              <span class="select__title">Сортировка:</span>
+              <select class="select-css" name="select"> <!--Supplement an id here instead of using 'name'-->
+                <option value="value1">по умолчанию</option>
+                <option value="value2" selected>Сначало дороже</option>
+                <option value="value3">Сначала дешевле</option>
+              </select>
+            </label>
+          </div>
+          <div class="filter__product-wrapper">
+
+          </div>
+          <div class="filter__pagination-wrapper">
+
+          </div>
+        </div>
       </section>
       <section class="maps">
         <div id="map"></div>

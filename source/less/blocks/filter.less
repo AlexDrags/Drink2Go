@@ -28,3 +28,47 @@
     margin-top: 2px;
   }
 }
+
+.filter__button-accept {
+  .font(400, 14px, 24px);
+  color: @white;
+  min-width: 150px;
+  min-height: 40px;
+
+  &:focus,
+  &:hover {
+    background: #9070ec;
+  }
+
+  &:active {
+    background: #593cac;
+  }
+
+  &:disabled {
+    background: #bdbdbd;
+  }
+}
+
+.filter__button-reset {
+  .font(400, 14px, 24px);
+  color: @primary;
+  background-color: @white;
+  min-width: 150px;
+  min-height: 40px;
+
+  &:focus,
+  &:hover {
+    color: @white;
+    background: #9070ec;
+  }
+
+  &:active {
+    color: @white;
+    background: #593cac;
+  }
+
+  &:disabled {
+    color: @white;
+    background: #bdbdbd;
+  }
+}

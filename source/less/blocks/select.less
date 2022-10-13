@@ -1,0 +1,33 @@
+.select__label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.select__title {
+  .font(600, 16px, 24px);
+}
+
+.select-css {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  outline: none;
+  padding: 5px;
+  padding-right: 40px;
+  background-color: transparent;
+
+}
+
+select::after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  background-image: url("../../img/row-select.svg");
+  right: 5px;
+  top: 5px;
+}
