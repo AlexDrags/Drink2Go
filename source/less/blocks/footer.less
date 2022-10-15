@@ -111,30 +111,59 @@
   .font(400, 14px, 20px);
   font-style: inherit;
   margin-bottom: 16px;
+  position: relative;
+  padding-left: 19px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    content: "";
+    width: 13px;
+    height: 16px;
+    background: url("../img/address.svg")
+  }
 }
 
 .footer__phone {
   display: inline-block;
   .reset-link();
   .font(400, 14px, 20px);
+  position: relative;
+  padding-left: 19px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    content: "";
+    width: 13px;
+    height: 16px;
+    background: url("../img/tel.svg")
+  }
 }
 
 .footer__copyright__text {
   .font(400, 12px, 16px);
-  color: #bdbdbd;
+  color: @bg-disabled;
 }
 
 .footer__copyright__link {
   .reset-link();
+  display: inline-flex;
+  gap: 4px;
   .font(400, 12px, 16px);
-  color: #bdbdbd;
+  color: @bg-disabled;
+  fill: currentColor;
 
   &:hover,
   &:focus-within {
-    color: #9070ec;
+    color: @bg-hover;
+    fill: currentColor;
   }
 
   &:active {
-    color: #593cac;
+    color: @bg-active;
+    fill: currentColor;
   }
 }

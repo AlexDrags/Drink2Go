@@ -3,9 +3,11 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding-top: 20px;
 
   @media (min-width: @tablet-widths) {
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 30px;
   }
 
   @media (min-width: @desktop-widths) {
@@ -14,6 +16,84 @@
 }
 
 .products-list__item {
-  max-width: 317px;
   background-color: @white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+
+
+  @media (min-width: @tablet-widths) {
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    max-width: 349px;
+  }
+
+  @media (min-width: @desktop-widths) {
+    max-width: 317px;
+  }
+}
+
+.products-list__wrapper {
+  display: inline-flex;
+  gap: 50px;
+}
+
+.products-list__price {
+  .font(600, 20px, 32px);
+}
+
+.products-list__button {
+  min-width: 141px;
+  height: 36px;
+}
+
+.products-list__link {
+  .reset-link();
+}
+
+.products-list__title{
+  .font(700, 18px, 32px);
+  text-align: left;
+
+  @media (min-width: @tablet-widths) {
+    .font(700, 24px, 36px);
+  }
+
+
+}
+
+.products-list__description {
+  .font(400, 14px, 20px);
+  text-align: left;
+}
+
+.products-list__button {
+  position: relative;
+  padding-left: 26px;
+
+  &:hover,
+  &:focus {
+    background: @bg-hover;
+  }
+
+  &:active {
+    background: @bg-active;
+  }
+
+  &:disabled {
+    background: @bg-disabled;
+  }
+}
+
+.products-list__button::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 16px;
+  left: 20px;
+  top: 8px;
+  background: url("../img/union-btn.svg");
 }

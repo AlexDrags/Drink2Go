@@ -34,12 +34,13 @@
   left: 0;
   height: 24px;
   width: 24px;
-  border: 2px solid #bdbdbd;
+  border: 2px solid @bg-disabled;
   border-radius: 50%;
 }
 
 /* При наведении курсора мыши добавьте серый цвет фона */
-.control:hover input ~ .checkmark {
+.control:hover input ~ .checkmark,
+.control:focus-within input ~ .checkmark {
   background-color: #ccc;
 }
 

@@ -27,3 +27,32 @@
   }
 
 }
+
+.promo-product__old-price {
+  .font(400, 16px, 32px);
+  margin-right: 6px;
+}
+
+.promo-product__new-price {
+  .font(600, 20px, 32px);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.promo-product__button {
+  min-width: 113px;
+  min-height: 40px;
+
+  &:hover,
+  &:focus {
+    background: @bg-hover;
+  }
+
+  &:active {
+    background: @bg-active;
+  }
+
+  &:disabled {
+    background: @bg-disabled;
+  }
+}

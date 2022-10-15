@@ -1,30 +1,29 @@
 .button-menu {
-  width: 16px;
-  height: 2px;
+  width: 60px;
+  height: 60px;
   align-self: center;
   border: none;
-  background: black;
+  background: @white;
   position: relative;
   cursor: pointer;
   margin-left: 22px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 2px;
-    left: 0;
-    bottom: 4px;
-    background: black;
+
+  &:hover {
+    background: #f0ebff;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 2px;
-    left: 0;
-    top: 4px;
-    background: black;
+  @media (min-width: @tablet-widths) {
+    display: none;
   }
 }
+
+// .button-menu__icon--open {
+//   display: none;
+// }
+
+.button-menu__icon--close {
+  display: none;
+}
+
+

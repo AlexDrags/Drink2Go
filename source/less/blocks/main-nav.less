@@ -9,17 +9,9 @@
   }
 }
 
-.main-nav__toggle {
-  @media (min-width: @tablet-widths) {
-    display: none;
-  }
-}
-
 .main-nav__list {
   .reset-list();
   display: none;
-
-
 
   @media (min-width: @tablet-widths) {
     display: flex;
@@ -30,6 +22,46 @@
     margin-right: 162px;
   }
 }
+
+// Класс открытого меню без js
+.main-nav__list-nojs--open {
+  @media (max-width: @tablet-widths) {
+    display: block;
+    position: absolute;
+    background: white;
+    z-index: 2;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+
+    .main-nav__link {
+      width: 100%;
+    }
+
+    .main-nav__list-nojs--close {
+      display: none;
+    }
+  }
+
+}
+
+.main-nav__list--open-js {
+  display: block;
+    position: absolute;
+    background: white;
+    z-index: 2;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+
+    .main-nav__link {
+      width: 100%;
+    }
+}
+
+
 
 .main-nav__link {
   .font(500, 12px, 16px);
@@ -51,6 +83,7 @@
   &:hover,
   &:focus-within {
     color: @primary;
+    background-color: #F0EBFF;
   }
 
   &:active,

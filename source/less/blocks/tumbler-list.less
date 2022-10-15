@@ -2,20 +2,20 @@
   .reset-list();
 }
 
-.switch {
+.tumbler-list__switch {
   position: relative;
   display: inline-flex;
   width: 42px;
   height: 24px;
 }
 
-.switch input {
+.tumbler-list__switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider {
+.tumbler-list__slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -27,7 +27,7 @@
   transition: .4s;
 }
 
-.slider:before {
+.tumbler-list__slider:before {
   position: absolute;
   content: "";
   height: 20px;
@@ -44,25 +44,25 @@
   min-width: max-content;
 }
 
-input:checked + .slider {
-  background-color: #7859cf;
+input:checked + .tumbler-list__slider {
+  background-color: @primary;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #7859cf;
+input:focus + .tumbler-list__slider {
+  box-shadow: 0 0 1px @primary;
 }
 
-input:checked + .slider:before {
+input:checked + .tumbler-list__slider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
 }
 
 /* Закругленные ползунки */
-.slider.round {
+.tumbler-list__slider.round {
   border-radius: 12px;
 }
 
-.slider.round:before {
+.tumbler-list__slider.round:before {
   border-radius: 50%;
 }

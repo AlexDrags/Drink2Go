@@ -1,0 +1,29 @@
+.noUi-connect {
+  background: @bg-hover;
+}
+
+.noUi-horizontal {
+  height: 4px;
+  width: 280px;
+
+  @media (min-width: @tablet-widths) {
+    width: 220px;
+  }
+
+  @media (min-width: @desktop-widths) {
+    width: 318px;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  right: -22px;
+  top: -12px;
+  border-radius: 50%;
+  border: 2px solid @bg-hover;
+}
+
+.noUi-handle::after, .noUi-handle::before {
+  background: none;
+}

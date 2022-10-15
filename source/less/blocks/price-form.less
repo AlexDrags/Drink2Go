@@ -1,7 +1,66 @@
+.price-form {
+  @media (min-width: @tablet-widths) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-widths) {
+    display: block;
+  }
+}
+
 .price-form__group {
   border: none;
+  padding: 0;
+  padding-top: 22px;
+
+}
+
+.price-form__field {
+  .font(500, 16px, 24px);
+  text-align: center;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-widths) {
+    text-align: left;
+  }
 }
 
 .price-form__title {
   .font(600, 16px,24px)
+}
+
+.price-form__value {
+  border: 2px solid @bg-hover;
+  border-radius: 4px;
+  width: 117px;
+  height: 37px;
+  text-align: center;
+
+  @media (min-width: @tablet-widths) {
+    width: 92px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-widths) {
+    width: 134px;
+    height: 40px;
+  }
+}
+
+.price-form__simbol {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  @media (min-width: @tablet-widths) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  @media (min-width: @desktop-widths) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
