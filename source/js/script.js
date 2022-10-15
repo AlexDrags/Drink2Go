@@ -1,9 +1,10 @@
-const sliderElement = document.querySelector('.uislider');
-const valueElement = document.querySelector('.price-form__value');
+const slider = document.querySelector('.uislider');
+let valueElementMin = document.querySelector('.price-form__value-min');
+let valueElementMax = document.querySelector('.price-form__value-max');
 
-valueElement.value = 0;
+slider.value = 0;
 
-noUiSlider.create(sliderElement, {
+noUiSlider.create(slider, {
   start: [0, 900],
     connect: true,
     range: {
@@ -11,6 +12,15 @@ noUiSlider.create(sliderElement, {
         'max': 1100,
     }
 });
+
+function getValueSlider(){
+  let sliderValue = slider.noUiSlider.get(true);
+  valueElementMin.value = Math.round(sliderValue[0]);
+  valueElementMax.value = Math.round(sliderValue[1]);
+}
+
+
+slider.noUiSlider.on('slide', getValueSlider);
 
 
 
@@ -86,8 +96,6 @@ if (mainNav.classList.contains('main-nav__list-nojs--open')) {
   buttonClose.classList.add('button-menu__icon--close');
 }
 
-
-
 function onClickHandler(evt) {
   evt.preventDefault();
   buttonOpen.classList.toggle('button-menu__icon--close');
@@ -97,4 +105,14 @@ function onClickHandler(evt) {
 
 menuButton.addEventListener('click', onClickHandler);
 
+const countryList = document.querySelectorAll('.tumbler-list__country');
 
+function getChecked(evt) {
+  if(!evt.target.hasAttribute('checked')){
+    evt.target.setAttribute('checked');
+  }
+}
+
+for(country of countryList) {
+  country.addEventListener('click', getChecked(evt));
+}
