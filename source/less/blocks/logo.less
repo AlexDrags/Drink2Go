@@ -13,3 +13,29 @@
     }
   }
 }
+
+.logo__image--small {
+  @media(min-width: @tablet-widths) {
+    display: none;
+  }
+}
+
+.logo__image--middle {
+  display: none;
+
+  @media(min-width: @tablet-widths) {
+    display: block;
+  }
+
+  @media(min-width: @desktop-widths) {
+    display: none;
+  }
+}
+
+.logo__image--big {
+  display: none;
+
+  @media(min-width: @desktop-widths) {
+    display: block;
+  }
+}

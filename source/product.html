@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Drink2Go</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <h1 class="visually-hidden">Кофейные напитки от Drink2Go</h1>
+      <div class="header__wrapper container">
+        <div class="header__logo-wrapper logo">
+          <a class="logo__link" href="http://">
+            <svg class="logo__image logo__image--small" width="32" height="36">
+              <use xlink:href="img/sprite.svg#logo-drink2small"></use>
+            </svg>
+            <svg class="logo__image logo__image--middle" width="82" height="36">
+              <use xlink:href="img/sprite.svg#logo-drink2middle"></use>
+            </svg>
+            <svg class="logo__image logo__image--big" width="170" height="36">
+              <use xlink:href="img/sprite.svg#logo-drink2full"></use>
+            </svg>
+          </a>
+          <span class="logo__text">Интернет-магазин<br/> кофейных напитков</span>
+        </div>
+        <nav class="main-nav">
+          <!-- Класс открытого меню без js: .main-nav__list-nojs--open; закрытого: .main-nav__list-nojs--close -->
+
+          <ul class="main-nav__list main-nav__list-nojs--open">
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--current" href="http://">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="http://">Каталог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="http://">Доставка</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="http://">О нас</a></li>
+          </ul>
+          <ul class="main-nav__user user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="http://">
+                <svg class="user-list__icon icon-user" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+                <span class="user-list__text">Войти</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="http://">
+                <svg class="user-list__icon icon-union" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#union"></use>
+                </svg>
+                <span class="user-list__text">Корзина</span>
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle button-menu button-js" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <!-- .button-menu__icon--open  -->
+            <svg class="button-menu__icon menu-js" width="60" height="60" focusable="false">
+              <use xlink:href="img/sprite.svg#menu"></use>
+            </svg>
+            <!-- .button-menu__icon--close -->
+            <svg class="button-menu__icon close-js" width="60" height="60" focusable="false">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="product-index">
+      <div class="container">
+        <h1>Cтраница с описанием товара</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque inventore ex earum cumque a fugiat dolor deserunt laborum. Reprehenderit voluptatibus incidunt maxime officiis vel, repellendus ad provident blanditiis doloremque a?</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper-block">
+          <div class="footer__logo logo">
+            <a class="logo__link" href="http://">
+              <svg class="logo__image logo__image--small" width="32" height="36">
+                <use xlink:href="img/sprite.svg#logo-drink2small"></use>
+              </svg>
+              <svg class="logo__image logo__image--middle" width="82" height="36">
+                <use xlink:href="img/sprite.svg#logo-drink2middle"></use>
+              </svg>
+              <svg class="logo__image logo__image--big" width="170" height="36">
+                <use xlink:href="img/sprite.svg#logo-drink2full"></use>
+              </svg>
+            </a>
+            <span class="logo__text">Интернет-магазин<br/> кофейных напитков</span>
+          </div>
+          <div class="footer__socials-wrapper">
+            <ul class="footer__socials socials-list">
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="http://">
+                  <span class="visually-hidden">vk</span>
+                  <svg class="socials-list__icon icon-vk" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="http://">
+                  <span class="visually-hidden">pinterest</span>
+                  <svg class="socials-list__icon icon-pinterest" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a class="socials-list__link" href="http://">
+                  <span class="visually-hidden">ok</span>
+                  <svg class="socials-list__icon icon-ok" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__navigation-wrapper">
+          <h4 class="footer__title">Интернет-магазин</h4>
+          <ul class="footer__navigation navigation-list">
+            <li class="navigation-list__item"><a class="navigation-list__link" href="http://">Каталог</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="http://">Доставка</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="http://">Способы оплаты</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="http://">О нас</a></li>
+          </ul>
+        </div>
+        <div class="footer__media-wrapper">
+          <h4 class="footer__title">Медиа</h4>
+          <ul class="footer-media media-list">
+            <li class="media-list__item"><a class="media-list__link" href="http://">Блог</a></li>
+            <li class="media-list__item"><a class="media-list__link" href="http://">Информация для СМИ</a></li>
+            <li class="media-list__item"><a class="media-list__link" href="http://">Правовая информация</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts-wrapper">
+          <h4 class="footer__title">Контакты</h4>
+          <address class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+          <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        </div>
+        <p class="footer__copyright">
+          <span class="footer__copyright__text">Разработано в</span>
+          <a class="footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+            <svg class="footer__copyright__icon icon-academy" width="12" height="16">
+              <use xlink:href="img/sprite.svg#academy"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
