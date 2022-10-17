@@ -91,8 +91,8 @@ const buttonOpen = document.querySelector('.menu-js');
 const buttonClose = document.querySelector('.close-js');
 
 
-if (mainNav.classList.contains('main-nav__list-nojs--open')) {
-  mainNav.classList.remove('main-nav__list-nojs--open');
+if (mainNav.classList.contains('main-nav__list--nojs--open')) {
+  mainNav.classList.remove('main-nav__list--nojs--open');
   buttonClose.classList.add('button-menu__icon--close');
 }
 
